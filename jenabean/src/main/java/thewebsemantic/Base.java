@@ -4,16 +4,14 @@ import java.beans.PropertyDescriptor;
 import java.lang.reflect.ParameterizedType;
 import java.util.ResourceBundle;
 
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.shared.*;
+import org.apache.jena.vocabulary.*;
+
 import thewebsemantic.binder.Binder;
 import thewebsemantic.binder.BinderImp;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntProperty;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.shared.Lock;
-import com.hp.hpl.jena.vocabulary.OWL;
-import com.hp.hpl.jena.vocabulary.RDF;
 
 /**
  * Provides functionality common to both {@link RDF2Bean} and {@link Bean2RDF}

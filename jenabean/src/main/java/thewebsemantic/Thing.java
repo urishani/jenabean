@@ -13,16 +13,11 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.logging.Level;
 
-import thewebsemantic.Base.NullType;
+import org.apache.jena.ontology.OntResource;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.RDF;
 
-import com.hp.hpl.jena.ontology.OntResource;
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.Statement;
-import com.hp.hpl.jena.rdf.model.StmtIterator;
-import com.hp.hpl.jena.vocabulary.RDF;
+import thewebsemantic.Base.NullType;
 
 /**
  * 

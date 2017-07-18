@@ -5,9 +5,9 @@ import static thewebsemantic.TypeWrapper.wrap;
 
 import java.util.Collection;
 
-import thewebsemantic.NotFoundException;
+import org.apache.jena.rdf.model.Resource;
 
-import com.hp.hpl.jena.rdf.model.Resource;
+import thewebsemantic.NotFoundException;
 
 public class RdfBean<T> {
 

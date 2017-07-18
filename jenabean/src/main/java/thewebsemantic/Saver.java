@@ -8,15 +8,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.Property;
+import org.apache.jena.rdf.model.Resource;
+
 
 public abstract class Saver {
 
 	private static Map<Class<?>, Saver> lookup = new HashMap<Class<?>, Saver>() ;
 	
 	static {
-		lookup.put(thewebsemantic.Resource.class, new ResourceSaver());
+		lookup.put(thewebsemantic.Resource_.class, new ResourceSaver());
 		lookup.put(Collection.class, new CollectionSaver());
 		lookup.put(Set.class, new CollectionSaver());
 		lookup.put(List.class, new ListSaver());

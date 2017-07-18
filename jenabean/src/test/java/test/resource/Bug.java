@@ -1,13 +1,13 @@
 package test.resource;
 
-import thewebsemantic.Resource;
+import thewebsemantic.Resource_;
 import thewebsemantic.binding.RdfBeanId;
 
 public class Bug extends RdfBeanId<Bug>{
 	
 	String name;
 	int age;
-	Resource similarTo;
+	Resource_ similarTo;
 
 	public String getName() {
 		return name;
@@ -21,10 +21,10 @@ public class Bug extends RdfBeanId<Bug>{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Resource getSimilarTo() {
+	public Resource_ getSimilarTo() {
 		return similarTo;
 	}
-	public void setSimilarTo(Resource similarTo) {
+	public void setSimilarTo(Resource_ similarTo) {
 		this.similarTo = similarTo;
 	}
 

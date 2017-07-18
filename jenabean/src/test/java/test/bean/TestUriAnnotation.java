@@ -6,9 +6,8 @@ import static org.junit.Assert.*;
 import thewebsemantic.Bean2RDF;
 import thewebsemantic.RDF2Bean;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 
 public class TestUriAnnotation {
 	

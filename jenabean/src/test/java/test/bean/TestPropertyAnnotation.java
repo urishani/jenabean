@@ -5,9 +5,8 @@ import org.junit.Test;
 
 import thewebsemantic.binding.Jenabean;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 
 public class TestPropertyAnnotation {
 

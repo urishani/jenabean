@@ -10,11 +10,8 @@ import thewebsemantic.Bean2RDF;
 import thewebsemantic.RDF2Bean;
 import thewebsemantic.binding.Jenabean;
 
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.ontology.OntModelSpec;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
-
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 
 public class TestLoadWith {
 

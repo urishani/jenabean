@@ -5,8 +5,9 @@ import org.junit.Test;
 import thewebsemantic.Bean2RDF;
 import thewebsemantic.RDF2Bean;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.*;
 
 import static org.junit.Assert.*;
 

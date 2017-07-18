@@ -1,8 +1,8 @@
 package thewebsemantic.binding;
 
-import thewebsemantic.binder.Binder;
+import org.apache.jena.ontology.OntClass;
 
-import com.hp.hpl.jena.ontology.OntClass;
+import thewebsemantic.binder.Binder;
 
 public class Binding {
 

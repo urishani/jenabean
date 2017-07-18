@@ -1,8 +1,5 @@
 package thewebsemantic;
 
-import static com.hp.hpl.jena.graph.Node.ANY;
-import static com.hp.hpl.jena.graph.Node.createURI;
-import static com.hp.hpl.jena.vocabulary.RDF.type;
 import static thewebsemantic.JenaHelper.convertLiteral;
 import static thewebsemantic.TypeWrapper.instanceURI;
 import static thewebsemantic.TypeWrapper.typeUri;
@@ -19,23 +16,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.jena.graph.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.shared.*;
+import org.apache.jena.vocabulary.*;
+
 import thewebsemantic.binding.Persistable;
 import thewebsemantic.lazy.LazyList;
 import thewebsemantic.lazy.LazySet;
 import thewebsemantic.lazy.Provider;
-
-import com.hp.hpl.jena.rdf.model.Literal;
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.ResIterator;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.Seq;
-import com.hp.hpl.jena.rdf.model.Statement;
-import com.hp.hpl.jena.rdf.model.StmtIterator;
-import com.hp.hpl.jena.shared.Lock;
-import com.hp.hpl.jena.shared.PropertyNotFoundException;
-import com.hp.hpl.jena.vocabulary.RDF;
 
 /**
  * RDF2Bean converts one or more RDF nodes into java beans. Normally these are
@@ -169,7 +158,7 @@ public class RDF2Bean extends Base implements Provider {
 	}
 
 	private <T> Collection<T> loadAll(Class<T> c) {
-		return loadIndividuals(c, m.listSubjectsWithProperty(type, rdfType(c)));
+		return loadIndividuals(c, m.listSubjectsWithProperty(RDF.type, rdfType(c)));
 	}
 
 	private <T> Collection<T> loadIndividuals(Class<T> c, ResIterator it) {
@@ -365,7 +354,7 @@ public class RDF2Bean extends Base implements Provider {
 	}
 
 	public boolean exists(String uri) {
-		return m.getGraph().contains(createURI(uri), ANY, ANY);
+		return m.getGraph().contains(NodeFactory.createURI(uri), Node.ANY, Node.ANY);
 	}
 
 	private <T> T toObject(Class<T> c, String id) {
@@ -385,8 +374,8 @@ public class RDF2Bean extends Base implements Provider {
 	}
 	
 	private <T> T toObject(Class<T> c, Resource i) { 
-		if (c == thewebsemantic.Resource.class)
-			return (T) new thewebsemantic.Resource(i.getURI());
+		if (c == thewebsemantic.Resource_.class)
+			return (T) new thewebsemantic.Resource_(i.getURI());
 		else if (c == URI.class)
 			return (T) URI.create(i.getURI());
 		else

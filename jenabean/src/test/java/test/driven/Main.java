@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 
 import thewebsemantic.NotFoundException;
 import thewebsemantic.binding.Jenabean;

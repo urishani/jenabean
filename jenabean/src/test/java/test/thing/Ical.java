@@ -3,7 +3,9 @@ package test.thing;
 import java.util.Collection;
 import java.util.Date;
 
-import com.hp.hpl.jena.rdf.model.Literal;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.*;
 
 import thewebsemantic.As;
 import thewebsemantic.Namespace;

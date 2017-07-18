@@ -3,12 +3,10 @@ package thewebsemantic;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import org.apache.jena.rdf.model.*;
+
 import thewebsemantic.lazy.Lazy;
 
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.StmtIterator;
 
 public class CollectionSaver extends Saver {
 

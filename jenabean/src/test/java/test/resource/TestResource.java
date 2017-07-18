@@ -6,10 +6,12 @@ import java.util.Collection;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.*;
 
 import thewebsemantic.NotFoundException;
-import thewebsemantic.Resource;
+import thewebsemantic.Resource_;
 import thewebsemantic.binding.Jenabean;
 import static thewebsemantic.binding.Jenabean.*;
 
@@ -21,11 +23,11 @@ public class TestResource {
 		J.bind(ModelFactory.createDefaultModel());
 		Bug ant = new Bug();
 		ant.setName("ant");
-		ant.setSimilarTo(new Resource("http://termite"));
+		ant.setSimilarTo(new Resource_("http://termite"));
 		ant.save();
 		Bug termite = new Bug();
 		termite.setName("termite");
-		termite.setSimilarTo(new Resource("http://termite"));
+		termite.setSimilarTo(new Resource_("http://termite"));
 		termite.save();
 
 		Collection<Bug> bugs = load(Bug.class);
@@ -47,9 +49,9 @@ public class TestResource {
 		Jenabean J = Jenabean.instance();
 		J.bind(ModelFactory.createDefaultModel());
 		Harmonica h = new Harmonica();
-		h.setSimilarTo(new ArrayList<Resource>());
-		h.getSimilarTo().add(new Resource("http://trombone"));
-		h.getSimilarTo().add(new Resource("http://trumpet"));
+		h.setSimilarTo(new ArrayList<Resource_>());
+		h.getSimilarTo().add(new Resource_("http://trombone"));
+		h.getSimilarTo().add(new Resource_("http://trumpet"));
 		h.save();
 		//J.model().write(System.out, "N3");
 		
@@ -67,14 +69,14 @@ public class TestResource {
 		Jenabean J = Jenabean.instance();
 		J.bind(ModelFactory.createDefaultModel());
 		Harmonica h = new Harmonica();
-		h.setSimilarTo(new ArrayList<Resource>());
-		h.setDifferentFrom(new ArrayList<Resource>());
-		h.getSimilarTo().add(new Resource("http://trombone"));
-		h.getSimilarTo().add(new Resource("http://trumpet"));
-		h.getDifferentFrom().add(new Resource("http://piano"));
-		h.getDifferentFrom().add(new Resource("http://drum"));		
-		h.getDifferentFrom().add(new Resource("http://computer"));
-		h.getDifferentFrom().add(new Resource("http://table"));
+		h.setSimilarTo(new ArrayList<Resource_>());
+		h.setDifferentFrom(new ArrayList<Resource_>());
+		h.getSimilarTo().add(new Resource_("http://trombone"));
+		h.getSimilarTo().add(new Resource_("http://trumpet"));
+		h.getDifferentFrom().add(new Resource_("http://piano"));
+		h.getDifferentFrom().add(new Resource_("http://drum"));		
+		h.getDifferentFrom().add(new Resource_("http://computer"));
+		h.getDifferentFrom().add(new Resource_("http://table"));
 		h.save();
 		//J.model().write(System.out, "N3");
 		
@@ -105,7 +107,7 @@ public class TestResource {
 		Bug ant = new Bug();
 		ant.setAge(11);
 		ant.setName("ant");
-		ant.setSimilarTo(new Resource("http://foo"));
+		ant.setSimilarTo(new Resource_("http://foo"));
 		ant.save();
 		ant = ant.load(ant.id());
 		assertNotNull(ant.getSimilarTo());

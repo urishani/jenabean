@@ -1,8 +1,6 @@
 package thewebsemantic;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.Resource;
+import org.apache.jena.rdf.model.*;
 
 public class ResourceSaver extends Saver {
 

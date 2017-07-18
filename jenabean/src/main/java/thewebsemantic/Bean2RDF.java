@@ -14,14 +14,10 @@ import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.Statement;
-import com.hp.hpl.jena.shared.Lock;
-import com.hp.hpl.jena.vocabulary.RDF;
-import com.hp.hpl.jena.vocabulary.RDFS;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.shared.*;
+import org.apache.jena.vocabulary.*;
+
 
 /**
  * <p>
@@ -200,7 +196,7 @@ public class Bean2RDF extends Base {
 	protected RDFNode toRDFNode(Object o) {
 		if (isPrimitive(o)) 
 			return toLiteral(m, o);
-		else if (o instanceof URI || o instanceof thewebsemantic.Resource)
+		else if (o instanceof URI || o instanceof thewebsemantic.Resource_)
 			return m.createResource(o.toString());
 		else
 			return _write(o, true);

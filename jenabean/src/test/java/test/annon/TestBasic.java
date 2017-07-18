@@ -2,14 +2,13 @@ package test.annon;
 
 import java.io.InputStream;
 
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 import org.junit.Test;
 
 import thewebsemantic.Bean2RDF;
 import thewebsemantic.NotFoundException;
 import thewebsemantic.binding.Jenabean;
-
-import com.hp.hpl.jena.ontology.OntModel;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 public class TestBasic {
 

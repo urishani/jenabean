@@ -9,10 +9,9 @@ import thewebsemantic.NotFoundException;
 import thewebsemantic.RDF2Bean;
 import thewebsemantic.binding.Jenabean;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.vocabulary.RDF;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.*;
 
 public class TestPolymorphic {
 	

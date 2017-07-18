@@ -11,8 +11,9 @@ import thewebsemantic.RDF2Bean;
 import thewebsemantic.lazy.LazyList;
 import thewebsemantic.lazy.LazySet;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.vocabulary.*;
 
 public class TestLazy {
 

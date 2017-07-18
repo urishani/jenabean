@@ -2,12 +2,8 @@ package thewebsemantic;
 
 import java.lang.reflect.Array;
 
-import com.hp.hpl.jena.rdf.model.NodeIterator;
-import com.hp.hpl.jena.rdf.model.Property;
-import com.hp.hpl.jena.rdf.model.RDFNode;
-import com.hp.hpl.jena.rdf.model.Resource;
-import com.hp.hpl.jena.rdf.model.Seq;
-import com.hp.hpl.jena.shared.PropertyNotFoundException;
+import org.apache.jena.rdf.model.*;
+import org.apache.jena.shared.PropertyNotFoundException;
 
 public class ArraySaver extends Saver {
 

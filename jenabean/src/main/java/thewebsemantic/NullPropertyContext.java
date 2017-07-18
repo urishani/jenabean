@@ -7,8 +7,9 @@ import java.net.URI;
 import java.util.Collection;
 import java.util.Date;
 
-import com.hp.hpl.jena.graph.Node;
-import com.hp.hpl.jena.rdf.model.Model;
+import org.apache.jena.graph.Node;
+import org.apache.jena.graph.NodeFactory;
+import org.apache.jena.rdf.model.*;
 
 class NullPropertyContext extends ValuesContext {
 
@@ -50,7 +51,7 @@ class NullPropertyContext extends ValuesContext {
 	 * @see thewebsemantic.ValuesContext#existsInModel(com.hp.hpl.jena.rdf.model.Model)
 	 */
 	public boolean existsInModel(Model m) {
-		return m.getGraph().contains( Node.createURI( uri() ), Node.ANY, Node.ANY );
+		return m.getGraph().contains( NodeFactory.createURI( uri() ), Node.ANY, Node.ANY );
 	}
 	
 	

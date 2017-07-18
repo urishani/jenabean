@@ -8,9 +8,7 @@ import org.junit.Test;
 import thewebsemantic.LocalizedString;
 import thewebsemantic.RDF2Bean;
 
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-
+import org.apache.jena.rdf.model.*;
 
 public class TestLang {
 

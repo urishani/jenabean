@@ -3,15 +3,15 @@ package test.resource;
 import java.util.Collection;
 import java.util.List;
 
-import thewebsemantic.Resource;
+import thewebsemantic.Resource_;
 import thewebsemantic.binding.RdfBeanId;
 
 public class Harmonica extends RdfBeanId<Harmonica>{
 	
 	String name;
 	int age;
-	Collection<Resource> similarTo;
-	List<Resource> differentFrom;
+	Collection<Resource_> similarTo;
+	List<Resource_> differentFrom;
 
 	public String getName() {
 		return name;
@@ -25,16 +25,16 @@ public class Harmonica extends RdfBeanId<Harmonica>{
 	public void setAge(int age) {
 		this.age = age;
 	}
-	public Collection<Resource> getSimilarTo() {
+	public Collection<Resource_> getSimilarTo() {
 		return similarTo;
 	}
-	public void setSimilarTo(Collection<Resource> similarTo) {
+	public void setSimilarTo(Collection<Resource_> similarTo) {
 		this.similarTo = similarTo;
 	}
-	public List<Resource> getDifferentFrom() {
+	public List<Resource_> getDifferentFrom() {
 		return differentFrom;
 	}
-	public void setDifferentFrom(List<Resource> differentFrom) {
+	public void setDifferentFrom(List<Resource_> differentFrom) {
 		this.differentFrom = differentFrom;
 	}
 }

@@ -1,9 +1,9 @@
 package thewebsemantic;
 
-public class Resource {
+public class Resource_ {
 	String uri;
 
-	public Resource(String s) {
+	public Resource_(String s) {
 		uri = s;
 	}
 	

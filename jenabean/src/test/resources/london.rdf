@@ -9,9 +9,9 @@
 <alternateName xml:lang="el">Λονδίνο</alternateName> 
 <alternateName xml:lang="qu">London</alternateName> 
 <alternateName xml:lang="ko">런던</alternateName> 
-<alternateName xml:lang="link">http://en.wikipedia.org/wiki/London</alternateName> 
+
 <alternateName xml:lang="ka">ლონდონი</alternateName> 
-<alternateName xml:lang="pms">Londra</alternateName> 
+
 <alternateName xml:lang="pt">Londres</alternateName> 
 <alternateName xml:lang="de">London</alternateName> 
 <alternateName xml:lang="pl">Londyn</alternateName> 
@@ -24,7 +24,7 @@
 <alternateName xml:lang="it">Londra</alternateName> 
 <alternateName xml:lang="co">Londra</alternateName> 
 <alternateName xml:lang="is">Lundúnir</alternateName> 
-<alternateName xml:lang="iata">LON</alternateName> 
+
 <alternateName xml:lang="io">London</alternateName> 
 <alternateName xml:lang="os">Лондон</alternateName> 
 <alternateName xml:lang="ur">لندن</alternateName> 
@@ -33,7 +33,7 @@
 <alternateName xml:lang="ia">London</alternateName> 
 <alternateName xml:lang="uk">Лондон</alternateName> 
 <alternateName xml:lang="oc">Londres</alternateName> 
-<alternateName xml:lang="nrm">Londres</alternateName> 
+
 <alternateName xml:lang="ug">لوندون</alternateName> 
 <alternateName xml:lang="hy">Լոնդոն</alternateName> 
 <alternateName xml:lang="bs">London</alternateName> 
@@ -62,7 +62,7 @@
 <alternateName xml:lang="ast">Londres</alternateName> 
 <alternateName xml:lang="am">ለንደን</alternateName> 
 <alternateName xml:lang="ms">London</alternateName> 
-<alternateName xml:lang="frp">Londres</alternateName> 
+
 <alternateName xml:lang="nds">London</alternateName> 
 <alternateName xml:lang="mr">लंडन</alternateName> 
 <alternateName xml:lang="gl">Londres - London</alternateName> 
@@ -77,10 +77,10 @@
 <alternateName xml:lang="sl">London</alternateName> 
 <alternateName xml:lang="ga">Londain</alternateName> 
 <alternateName xml:lang="sk">Londýn</alternateName> 
-<alternateName xml:lang="sh">London</alternateName> 
+
 <alternateName xml:lang="fy">Londen</alternateName> 
 <alternateName xml:lang="yi">לאנדאן</alternateName> 
-<alternateName xml:lang="als">London</alternateName> 
+
 <alternateName xml:lang="fr">Londres</alternateName> 
 <alternateName xml:lang="lv">Londona</alternateName> 
 <alternateName xml:lang="lt">Londonas</alternateName> 
@@ -116,7 +116,7 @@
 <alternateName xml:lang="pl">London</alternateName> 
 <alternateName xml:lang="he">לונדון</alternateName> 
 <alternateName xml:lang="fr">London</alternateName> 
-<alternateName xml:lang="link">http://en.wikipedia.org/wiki/London%2C_Ontario</alternateName> 
+
 <alternateName xml:lang="de">London</alternateName> 
 <alternateName xml:lang="et">London</alternateName> 
 <alternateName xml:lang="es">London</alternateName> 
@@ -140,7 +140,7 @@
 <alternateName xml:lang="pl">East London</alternateName> 
 <alternateName xml:lang="lt">Yst Londonas</alternateName> 
 <alternateName xml:lang="fr">East London</alternateName> 
-<alternateName xml:lang="link">http://en.wikipedia.org/wiki/East_London%2C_South_Africa</alternateName> 
+
 <alternateName xml:lang="af">Oos Londen</alternateName> 
 <alternateName xml:lang="fi">East London</alternateName> 
 <alternateName xml:lang="da">East London</alternateName> 
@@ -167,8 +167,8 @@
 </Feature> 
 <Feature rdf:about="http://sws.geonames.org/4298960/"> 
 <name>London</name> 
-<alternateName xml:lang="post">40747</alternateName> 
-<alternateName xml:lang="link">http://en.wikipedia.org/wiki/London%2C_Kentucky</alternateName> 
+
+
 <featureClass rdf:resource="http://www.geonames.org/ontology#P"/> 
 <featureCode rdf:resource="http://www.geonames.org/ontology#P.PPL"/> 
 <inCountry rdf:resource="http://www.geonames.org/countries/#US"/> 
@@ -190,7 +190,7 @@
 <alternateName xml:lang="fr">Tour de Londres</alternateName> 
 <alternateName xml:lang="ru">Тауэр</alternateName> 
 <alternateName xml:lang="zh">伦敦塔</alternateName> 
-<alternateName xml:lang="link">http://en.wikipedia.org/wiki/Tower_of_London</alternateName> 
+
 <alternateName xml:lang="fi">Lontoon Tower</alternateName> 
 <alternateName xml:lang="sv">Towern</alternateName> 
 <alternateName xml:lang="pt">Torre de Londres</alternateName> 
@@ -215,7 +215,7 @@
 <name>London Reefs</name> 
 <featureClass rdf:resource="http://www.geonames.org/ontology#U"/> 
 <featureCode rdf:resource="http://www.geonames.org/ontology#U.RFSU"/> 
-<inCountry rdf:resource="http://www.geonames.org/countries/#  "/> 
+<inCountry rdf:resource="http://www.geonames.org/countries/#"/> 
 <wgs84_pos:lat>8.85</wgs84_pos:lat> 
 <wgs84_pos:long>112.5333333</wgs84_pos:long> 
 <nearbyFeatures rdf:resource="http://sws.geonames.org/1879967/nearby.rdf"/> 

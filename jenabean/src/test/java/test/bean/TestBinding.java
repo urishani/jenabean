@@ -4,7 +4,8 @@ import org.junit.Test;
 
 import thewebsemantic.binding.Jenabean;
 
-import com.hp.hpl.jena.ontology.OntClass;
+import org.apache.jena.ontology.*;
+import org.apache.jena.rdf.model.*;
 
 public class TestBinding {
 	
