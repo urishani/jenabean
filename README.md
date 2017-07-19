@@ -14,4 +14,4 @@ the jenabean/bin folder holds the new jar *jenabean-apache-1.0.7.jar*
 MavenPOMfile indicates the *il.ibm.com* organization id for this release.
 This artifact is not yet deposited into the Maven repository.
 
-The convertion work has been partially been supported by the EC H2020 project PSYMBIOSYS, grant #636804
+The convertion work has been partially supported by the EC H2020 project PSYMBIOSYS, grant #636804
